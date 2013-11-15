@@ -13,7 +13,7 @@
         android:id="@+id/read_serial_number_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/read_manufacturer_name" />
+        android:text="@string/read_serial_number" />
     <Button
         android:id="@+id/write_alert_level_button"
         android:layout_width="match_parent"

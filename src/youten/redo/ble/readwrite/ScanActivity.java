@@ -133,11 +133,13 @@ public class ScanActivity extends Activity implements BluetoothAdapter.LeScanCal
                     BluetoothDevice selectedDevice = item.getDevice();
                     intent.putExtra(DeviceActivity.EXTRA_BLUETOOTH_DEVICE, selectedDevice);
                     startActivity(intent);
+
+                    // stop before change Activity
+                    stopScan();
                 }
             }
         });
 
-        // stop scan;
         stopScan();
     }
 
