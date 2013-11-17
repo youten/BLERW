@@ -34,6 +34,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
 
+/**
+ * BLEデバイスをスキャンし、一覧に表示するActivity。
+ */
 public class ScanActivity extends Activity implements BluetoothAdapter.LeScanCallback {
     private BluetoothAdapter mBTAdapter;
     private DeviceAdapter mDeviceAdapter;
