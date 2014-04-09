@@ -5,18 +5,19 @@
     android:orientation="vertical"
     tools:context=".DeviceActivity" >
     <Button
-        android:id="@+id/read_manufacturer_name_button"
+        android:id="@+id/start_rwbench"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/read_manufacturer_name" />
-    <Button
-        android:id="@+id/read_serial_number_button"
+        android:text="@string/start_rwbench" />
+    <ScrollView
+        android:id="@+id/result_scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/read_serial_number" />
-    <Button
-        android:id="@+id/write_alert_level_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/write_alert_level" />
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+        <TextView
+            android:id="@+id/bench_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false" />
+    </ScrollView>
 </LinearLayout>
