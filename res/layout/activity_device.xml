@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeviceActivity" >
+    <Button
+        android:id="@+id/read_manufacturer_name_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_manufacturer_name" />
+    <Button
+        android:id="@+id/read_serial_number_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/read_serial_number" />
+    <Button
+        android:id="@+id/write_alert_level_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/write_alert_level" />
+</LinearLayout>
